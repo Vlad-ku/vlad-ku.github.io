@@ -18,7 +18,10 @@ layout: default
 <div class="pagination">
   <div class="pag-button pag-left">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}">Новее</a>
+      <a href="{{ paginator.previous_page_path }}">
+        <i class="fas fa-arrow-left"></i>
+        <span>Новее</span>
+      </a>
     {% endif %}
   </div>
 
@@ -28,7 +31,10 @@ layout: default
 
   <div class="pag-button pag-right">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Старее</a>
+      <a href="{{ paginator.next_page_path }}">
+        <span>Старее</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
     {% endif %}
   </div>
 </div>

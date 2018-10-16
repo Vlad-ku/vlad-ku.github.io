@@ -29,23 +29,24 @@
   </head>
 
   <body>
-
-    <header>
-      <nav class="header-nav">
-        <a href="{{ site.baseurl }}/">Home</a>
-      </nav>
+    <header class="header">
+      <a href="{{ site.baseurl }}/">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </a>
     </header>
 
-
-    <div class="main-container">
-      <div class="main-block">
-        {{ content }}
-      </div>
-    </div>
+    <div class="content">{{ content }}</div>
 
     <footer class="footer">
-      <a href="{{ site.baseurl }}/about">About</a>
+      <a href="{{ site.baseurl }}/about/">
+        <i class="fas fa-info-circle"></i>
+        <span>about</span>
+      </a>
+      <a href="//github.com/vlad-ku/">
+        <i class="fab fa-github"></i>
+        <span>github</span>
+      </a>
     </footer>
-
   </body>
 </html>
