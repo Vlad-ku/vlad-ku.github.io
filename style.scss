@@ -46,7 +46,29 @@ a { color: #333; }
     border-bottom: 1px solid #ddd;
 }
 
-.footer {
+.pagination {
     margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+        flex: 0 0 100px;
+        text-align: center;
+    }
+    .pag-number {
+        flex-grow: 1;
+    }
+    .pag-button {
+
+    }
+    // .pag-left {
+    //     float: left;
+    // }
+    // .pag-right {
+    //     float: right;
+    // }
+}
+
+.footer {
     border-top: 1px solid #ddd;
 }

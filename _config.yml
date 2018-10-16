@@ -20,4 +20,8 @@ exclude:
   - README.md
   - CNAME
 
-permalink: /:title/
+# permalink: /:title/
+permalink: /:year:month:day-:title/
+
+paginate: 3
+paginate_path: "/page:num/"
