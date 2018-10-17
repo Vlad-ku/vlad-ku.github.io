@@ -18,6 +18,13 @@ a {
 
     &:hover { color: #555; }
 }
+pre {
+    margin-bottom: 2em;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
 /*----------------------------------------------------------------*/
 .content { // default шаблон
     padding: 20px;

@@ -13,12 +13,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
-  - node_modules
-  - LICENSE
-  - README.md
-  - CNAME
+  # - node_modules
+  # - LICENSE
+  # - README.md
 
 # permalink: /:title/
 permalink: /:year:month:day-:title/
