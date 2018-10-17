@@ -5,9 +5,11 @@ layout: default
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="post">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+      <div class="h-num">
+          <h2 class="h"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <div class="date">{{ post.date | date: "%B %e, %Y" }}</div>
+      </div>
+      
       <div class="entry">{{ post.excerpt }}</div>
 
       <a href="{{ post.url }}" class="read-more">Read More</a>
