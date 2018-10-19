@@ -1,6 +1,14 @@
 ---
 ---
 
+$color_text:            #333;
+$color_text_hover:      #555;
+
+$color_background:      #fdfdfd;
+$color_background_card: #eee;
+
+$color_border:          #ddd;
+
 // остальные стили должны лежать в папке _sass
 // и иметь название _reset.scss
 // в результате все будет собрано в один файл style.css в корне
@@ -9,18 +17,18 @@
 /*----------------------------------------------------------------*/
 body {
     font: normal 19px/1.3 'PT Serif', "Helvetica Neue", "Helvetica", Arial, sans-serif;
-    color: #333;
-    background: #fdfdfd;
+    color: $color_text;
+    background: $color_background;
 }
 a {
-    color: #333;
+    color: $color_text;
     text-decoration: none;
 
-    &:hover { color: #555; }
+    &:hover { color: $color_text_hover; }
 }
 pre {
     margin-bottom: 2em;
-    background-color: #eee;
+    background-color: $color_background_card;
     border-radius: 5px;
     padding: 10px;
     overflow: auto;
@@ -28,6 +36,8 @@ pre {
 /*----------------------------------------------------------------*/
 .content { // default шаблон
     padding: 20px;
+
+    a { text-decoration: underline; }
 
     .post { // пост на главной и сингл
         .h-num { // блок с заголовком и датой
@@ -41,10 +51,20 @@ pre {
     .posts { // на главной
         .post { // карточки постов
             margin-bottom: 2em;
-            background-color: #eee;
+            background-color: $color_background_card;
             border-radius: 5px;
             padding: 10px;
         }
+    }
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+    
+        > * {
+            flex: 0 0 100px;
+            text-align: center;
+        }
+        .pag-number { flex-grow: 1; }
     }
 
     @media (min-width: 960px) { // desktop
@@ -53,17 +73,6 @@ pre {
             margin: auto;
         }
     }
-}
-/*----------------------------------------------------------------*/
-.pagination {
-    display: flex;
-    justify-content: space-between;
-
-    > * {
-        flex: 0 0 100px;
-        text-align: center;
-    }
-    .pag-number { flex-grow: 1; }
 }
 /*----------------------------------------------------------------*/
 .header,
@@ -77,10 +86,10 @@ pre {
 }
 .header {
     text-transform: uppercase;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $color_border;
 }
 .footer {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $color_border;
 
     a { padding: 5px; }
 }
