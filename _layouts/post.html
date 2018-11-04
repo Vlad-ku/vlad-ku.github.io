@@ -10,6 +10,7 @@ layout: default
   </div>
 
   <div class="entry">
-    {{ content | toc }}
+    {% include toc.html html=content %}
+    {{ content }}
   </div>
 </article>
