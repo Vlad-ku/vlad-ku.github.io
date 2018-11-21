@@ -158,6 +158,24 @@ pacman -S openssh net-tools
 sudo systemctl enable sshd
 ```
 
+### Настройка звука
+
+```
+pacman -S alsa-utils alsa-plugins
+```
+
+Для управления:
+
+```
+alsamixer
+```
+
+Для проверки звука:
+
+```
+speaker-test -c 2
+```
+
 ## Ссылки
 
 * [Первая статья по установке](/20181104-install-arch)
