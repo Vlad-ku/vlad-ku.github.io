@@ -153,7 +153,7 @@ Section "InputClass"
 	Option "XkbLayout" "us,ru"
 	Option "XkbModel" "pc105"
 	Option "XkbVariant" ","
-	Option "XKbOptions" "grp:alt_shift_toggle,grp_led:scroll"
+	Option "XKbOptions" "grp:caps_toggle,grp_led:scroll"
 EndSection
 ```
 
