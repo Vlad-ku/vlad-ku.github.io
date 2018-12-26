@@ -28,29 +28,24 @@
     <!------------->
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
-      <a href="{{ site.baseurl }}/">
-        <i class="fas fa-home"></i>
-        <span>Home</span>
-      </a>
+      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <div class="ref">
+        <a href="{{ site.baseurl }}/about/"> <i class="fas fa-info-circle"></i></a>
+        <a href="//github.com/vlad-ku/">     <i class="fab fa-github"></i></a>
+        <a href="//t.me/vlad_ku">            <i class="fab fa-telegram"></i></a>
+      </div>
     </header>
 
-    <div class="content">{{ content }}</div>
+    <div class="content">
+      <div class="sub-content">
+        {{ content }}
+      </div>
+    </div>
 
-    <footer class="footer">
-      <a href="{{ site.baseurl }}/about/">
-        <i class="fas fa-info-circle"></i>
-        <span>about</span>
-      </a>
-      <a href="//github.com/vlad-ku/">
-        <i class="fab fa-github"></i>
-        <span>github</span>
-      </a>
-      <a href="//t.me/vlad_ku">
-        <i class="fab fa-telegram"></i>
-        <span>telegram</span>
-      </a>
-    </footer>
+    <!-- <footer class="footer">
+
+    </footer> -->
   </body>
 </html>
