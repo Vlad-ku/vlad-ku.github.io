@@ -203,6 +203,12 @@ current_theme archlinux
 pacman -S lxappearance arc-gtk-theme
 ```
 
+Установим шрифты:
+
+```
+pacman -S ttf-droid
+```
+
 ### Настройка ssh
 
 Для настройки ssh необходимо установить пакет `openssh` и набор сетевых утилит `net-tools` (туда входит ifconfig).
