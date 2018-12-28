@@ -246,4 +246,5 @@ speaker-test -c 2
 ## Ссылки
 
 * [Первая статья по установке](/20181104-install-arch)
-* [Репозиторий для настройки i3wm](https://github.com/vlad-ku/i3conf)
+* [Репозиторий для настройки i3wm и других приложений (разовый)](https://github.com/vlad-ku/i3conf)
+* [Репозиторий с конфиг файлами программ (постоянно меняется)](https://github.com/vlad-ku/home-conf)
