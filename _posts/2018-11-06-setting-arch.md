@@ -192,6 +192,19 @@ alsamixer
 speaker-test -c 2
 ```
 
+Если звука нет, возможно по умолчанию стоит не та карта. Исправить можно в файле:
+
+```
+sudo vim /usr/share/alsa/alsa.conf
+```
+
+Указываем нужный номер устройства:
+
+```
+defaults.ctl.card 0
+defaults.pcm.card 0
+```
+
 ## Ссылки
 
 * [Первая статья по установке](/20181104-install-arch)
