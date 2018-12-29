@@ -116,58 +116,7 @@ systemctl enable slim
 
 ## Настройка раскладки (для Х org)
 
-Если в графическом режиме переключение раскладки не работает, следует посмотреть текущие настройки:
-
-```
-setxkbmap -print -verbose 10
-```
-
-Пример ответа с рабочей системы:
-
-```
-Setting verbose level to 10
-locale is C
-Trying to load rules file ./rules/evdev...
-Trying to load rules file /usr/share/X11/xkb/rules/evdev...
-Success.
-Applied rules from evdev:
-rules:      evdev
-model:      pc105
-layout:     us,ru
-variant:    ,
-options:    grp:alt_shift_toggle,grp_led:scroll,grp:alt_shift_toggle,grp_led:scroll
-Trying to build keymap using the following components:
-keycodes:   evdev+aliases(qwerty)
-types:      complete
-compat:     complete+ledscroll(group_lock)
-symbols:    pc+us+ru:2+inet(evdev)+group(alt_shift_toggle)
-geometry:   pc(pc105)
-xkb_keymap {
-	xkb_keycodes  { include "evdev+aliases(qwerty)"	};
-	xkb_types     { include "complete"	};
-	xkb_compat    { include "complete+ledscroll(group_lock)"	};
-	xkb_symbols   { include "pc+us+ru:2+inet(evdev)+group(alt_shift_toggle)"	};
-	xkb_geometry  { include "pc(pc105)"	};
-};
-```
-
-Следует добавить следующий код:
-
-```
-Section "InputClass"
-    Identifier "system-keyboard"
-	Option "XkbLayout" "us,ru"
-	Option "XkbModel" "pc105"
-	Option "XkbVariant" ","
-	Option "XKbOptions" "grp:caps_toggle,grp_led:scroll"
-EndSection
-```
-
-В файл:
-
-```
-/etc/X11/xorg.conf.d/00-keyboard.conf
-```
+Настройка раскладки перенесена в проект i3conf.
 
 ## "Полировка" системы
 
