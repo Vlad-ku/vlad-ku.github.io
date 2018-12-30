@@ -176,34 +176,35 @@ systemctl enable sshd
 
 ### Настройка звука
 
-```
-pacman -S alsa-utils alsa-plugins
-```
+Ставим alsa и pulseaudio.
 
+```
 Для управления:
-
-```
 alsamixer
-```
 
 Для проверки звука:
-
-```
 speaker-test -c 2
 ```
 
-Если звука нет, возможно по умолчанию стоит не та карта. Исправить можно в файле:
+Возможные причины отсутствия звука:
+
+1. По умолчанию стоит не та карта. Исправить можно в файле:
 
 ```
 sudo vim /usr/share/alsa/alsa.conf
 ```
 
-Указываем нужный номер устройства:
+Указываем нужный номер карты:
 
 ```
 defaults.ctl.card 0
 defaults.pcm.card 0
 ```
+
+2. В i3 горячих клавишах указано неправильное имя устройства
+
+На крайний случай смотреть сюда:
+https://www.reddit.com/r/i3wm/comments/2wbv8x/question_how_to_manage_audio_with_i3/
 
 ## Ссылки
 
