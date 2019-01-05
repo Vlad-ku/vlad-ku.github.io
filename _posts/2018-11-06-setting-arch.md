@@ -188,7 +188,8 @@ speaker-test -c 2
 
 Возможные причины отсутствия звука:
 
-1. По умолчанию стоит не та карта. Исправить можно в файле:
+**По умолчанию стоит не та карта**
+Исправить можно в файле:
 
 ```
 sudo vim /usr/share/alsa/alsa.conf
@@ -201,10 +202,9 @@ defaults.ctl.card 0
 defaults.pcm.card 0
 ```
 
-2. В i3 горячих клавишах указано неправильное имя устройства
+**В i3 горячих клавишах указано неправильное имя устройства**
 
-На крайний случай смотреть сюда:
-https://www.reddit.com/r/i3wm/comments/2wbv8x/question_how_to_manage_audio_with_i3/
+На крайний случай смотреть [сюда](https://www.reddit.com/r/i3wm/comments/2wbv8x/question_how_to_manage_audio_with_i3)
 
 ## Ссылки
 
